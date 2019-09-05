@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "254946672536",
+    "firebase_url": "https://yochans-iitg.firebaseio.com",
+    "project_id": "yochans-iitg",
+    "storage_bucket": "yochans-iitg.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254946672536:android:7a00de43cf5b8053",
+        "android_client_info": {
+          "package_name": "com.example.thoughts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "254946672536-c3vag2sehi2lt6umormu8jomiqjel3ns.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAFHGYw06c4GygPyNTHXaX2rIqLfeWS2I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

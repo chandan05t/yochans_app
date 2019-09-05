@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:strokeAttrs="http://schemas.android.com/tools"
+    android:id="@+id/relLay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/themeImageView"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/thoughtTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/themeImageView"
+        android:text="Thought Text View"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/userTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/thoughtTextView"
+        android:layout_below="@id/thoughtTextView"
+        android:layout_marginBottom="6dp"
+        android:text="TextView"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/themeImageView"
+        android:layout_toLeftOf="@id/superImageView"
+        android:hint="24H /"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/superImageView"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignBottom="@+id/themeImageView"
+        android:layout_toLeftOf="@+id/superTextView"
+        app:srcCompat="@mipmap/superafter" />
+
+    <TextView
+        android:id="@+id/superTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/themeImageView"
+        android:layout_toLeftOf="@+id/dislikeImageView"
+        android:hint="25 /"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/dislikeImageView"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignBottom="@+id/themeImageView"
+        android:layout_toLeftOf="@+id/dislikeTextView"
+        app:srcCompat="@mipmap/mfafter" />
+
+    <TextView
+        android:id="@+id/dislikeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/themeImageView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="3dp"
+        android:hint="25"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/themeImageView"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="15dp"
+        android:background="#ececec" />
+
+</RelativeLayout>

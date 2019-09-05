@@ -1,0 +1,201 @@
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:indeterminate="true" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progressBar"
+            android:layout_centerHorizontal="true"
+            android:text="Uploading..."
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/EventImage"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <Button
+            android:id="@+id/addImageButton"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/EventImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="72dp"
+            android:text="Add Image" />
+
+        <EditText
+            android:id="@+id/eventNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/changeButton"
+            android:ems="10"
+            android:hint="Event Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/venueText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/eventNameText"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            android:hint="Venue"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/venueText"
+            android:layout_marginTop="63dp"
+            android:text="Date :"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/dd"
+            android:layout_marginTop="17dp"
+            android:text="Time (24h) :"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/dd"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/dateText"
+            android:layout_alignBottom="@+id/dateText"
+            android:layout_toLeftOf="@+id/addImageButton"
+            android:layout_toStartOf="@+id/addImageButton"
+            android:ems="10"
+            android:hint="DD"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/mmDate"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/dd"
+            android:layout_alignBottom="@+id/dd"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/dd"
+            android:layout_toRightOf="@+id/dd"
+            android:ems="10"
+            android:hint="MM"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/yyyy"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/mmDate"
+            android:layout_alignBottom="@+id/mmDate"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:layout_toEndOf="@+id/mmDate"
+            android:layout_toRightOf="@+id/mmDate"
+            android:ems="10"
+            android:hint="YYYY"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/hh"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/timeText"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="126dp"
+            android:ems="10"
+            android:hint="HH"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/mmTime"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/hh"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_toEndOf="@+id/hh"
+            android:layout_toRightOf="@+id/hh"
+            android:ems="10"
+            android:hint="MM"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/descriptionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/hh"
+            android:layout_marginTop="13dp"
+            android:ems="10"
+            android:hint="Description"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/addEventButton"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Add Event" />
+
+        <Button
+            android:id="@+id/changeButton"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/EventImage"
+            android:alpha="0"
+            android:text="change"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
